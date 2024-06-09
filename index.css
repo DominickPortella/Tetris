@@ -13,8 +13,8 @@ body {
 #left-div {
   display: inline-block;
   vertical-align: top;
-  margin: 0 20 20 20;
-  padding: 20;
+  margin: 0 20px 20px 20px;
+  padding: 20px;
   border: solid 1px white;
   width: 286px;
   height: 572.325px;
@@ -45,5 +45,88 @@ body {
   font-weight: bold;
   font-family: "Lucida Console", "Courier New", monospace;
   text-align: left;
-  margin: 15 0;
+  margin: 15px 0;
+}
+
+#touch-controls {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.control-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.control-button {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-button:hover {
+  background-color: #45a049;
+}
+
+.control-button:active {
+  background-color: #367c39;
+}
+
+#left-button {
+  background-image: url("resources/izquierda.png");
+  background-size: cover;
+}
+
+#down-button {
+  background-image: url("resources/velocidad.png");
+  background-size: cover;
+}
+
+#right-button {
+  background-image: url("resources/derecha.png");
+  background-size: cover;
+}
+
+#rotate-button {
+  background-image: url("resources/rotar.png");
+  background-size: cover;
+}
+
+#left-button,
+#down-button,
+#right-button,
+#rotate-button {
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#rotate-button {
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-text {
+  font-size: 12px;
+  color: white;
+  margin-top: 5px;
+}
+
+#down-button-container .button-text {
+  font-size: 12px;
+  color: white;
+  margin-top: 5px;
 }
