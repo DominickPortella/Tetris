@@ -180,7 +180,7 @@ window.onload = () => {
                 } else {
                     // Check if player has lost
                     if (FIELD[MIN_VALID_ROW - 1].some(block => block !== false)) {
-                        alert("You have lost!");
+                        alert("¡Usted ha perdido!");
                         reset();
                     }
                 }
@@ -232,5 +232,4 @@ window.onload = () => {
         if (event.key === "ArrowDown")
             delay = Tetromino.DELAY;
     }
-
 }
